@@ -10,7 +10,7 @@ Then
 1. Fork the repository or update your fork
 2. Add the URL to the list. 
   - To make things easier, keep the list sorted alphabetically
-  - Don't link the URL
+  - Don't link the URL (see https://gist.github.com/alexpeattie/4729247)
 3. Send a Pull Request
 
 If you think you have been wrongly included in this list, fix the list and open a Pull Request. 
