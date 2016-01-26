@@ -1,10 +1,12 @@
 # How to contribute
 
 First of all, please
+
 1. verify that the URL is a spam URL
 2. verify that the URL is not already listed
 
 Then
+
 1. Fork the repository or update your fork
 2. Add the URL to the list. 
   - To make things easier, keep the list sorted alphabetically
