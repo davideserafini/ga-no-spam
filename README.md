@@ -34,7 +34,7 @@ Aim is to provide a list of spam referrer and URL to better setup GA.
 
 ## Common URLs
 - ?from=http://<i></i>free-social-buttons.xyz
-- ?from=http://<i></i>net-profits.xyz/
+- ?from=http://<i></i>net-profits.xyz
 - ?from=http://<i></i>share-buttons.xyz
-- ?from=http://www<i></i>.traffic-cash.xyz/
+- ?from=http://www<i></i>.traffic-cash.xyz
 - ?from=http://www<i></i>.traffic2cash.xyz
