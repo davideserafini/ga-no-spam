@@ -9,6 +9,7 @@ Aim is to provide a list of spam referrer and URL to better setup GA.
 - с.новым.годом.рф
 - dktr.ru
 - free-social-buttons.xyz
+- how.to.travel.and.make.34913167.money.online.for.free.with.maps.ilovevitaly.com
 - iskalko.ru
 - lsex.xyz
 - new-look.for-your.website
@@ -33,5 +34,7 @@ Aim is to provide a list of spam referrer and URL to better setup GA.
 
 ## Common URLs
 - ?from=http://<i></i>free-social-buttons.xyz
+- ?from=http://<i></i>net-profits.xyz/
 - ?from=http://<i></i>share-buttons.xyz
+- ?from=http://www<i></i>.traffic-cash.xyz/
 - ?from=http://www<i></i>.traffic2cash.xyz
