@@ -13,24 +13,29 @@ def prepareLine(line):
     line = cleanLine(line)
     return re.escape(line)
 
+# Save the list to an output file
 def saveToFile(outputPath, newContent):
     newFile = open(outputPath, "w")
     newFile.write("\n\n".join(newContent))
     newFile.close()
 
+# Check if the script is launched from within a repository structure or not
 def checkRepositoryMode():
     thisFilePath = os.path.realpath(__file__)
     thisDirectoryName = os.path.basename(os.path.dirname(thisFilePath))
     return thisDirectoryName == "tools" and os.path.exists(os.path.join(os.path.dirname(thisFilePath), os.pardir, URL_LOCAL_SOURCE))
 
+# Get correct path for the tmp directory
 def getTmpDirectory():
     thisFilePath = os.path.realpath(__file__)
     return os.path.abspath(os.path.join(thisFilePath, os.pardir, TMP_DIR))
 
+# Get correct path for the output directory
 def getOutputDirectory():
     thisFilePath = os.path.realpath(__file__)
     return os.path.abspath(os.path.join(thisFilePath, os.pardir, OUTPUT_DIR))
 
+# Get correct path for output file
 def getOutputFile(outputFile):
     return os.path.join(getOutputDirectory(), outputFile)
 
@@ -91,9 +96,11 @@ urlSpam = []
 # List of ascii domains converted into regex. Each entry fits in length the FILTER_MAX_LENGTH value
 regexFilters = []
 
-
+# Loop on the file
 for line in lines:
+    # Skip empty lines
     if line != "":
+        # Check only lines starting with a -
         if (line[0] == "-"):
             if inReferralSpamList:
                 try:
@@ -106,12 +113,14 @@ for line in lines:
             if inUrlSpamList:
                 urlSpam.append(cleanLine(line))
 
+        # Use titles as markers of the lists
         if line == "## Referral spam":
             inReferralSpamList = True
         if line == "## Common URLs":
             inReferralSpamList = False
             inUrlSpamList = True
 
+# Create the regex from the ascii domains. Keep the length below FILTER_MAX_LENGTH
 for domain in referralSpam:
     lineLength = len(domain)
     alreadyBuiltLineLength = 0 if len(regexFilters) == 0 else len(regexFilters[len(regexFilters) - 1])
